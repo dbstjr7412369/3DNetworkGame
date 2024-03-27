@@ -448,5 +448,10 @@ namespace Photon.Realtime
 
             return false;
         }
+
+        public static implicit operator Transform(Player v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
