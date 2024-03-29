@@ -131,6 +131,53 @@ Transform:
   - {fileID: 4631304429149543418}
   m_Father: {fileID: 9009682191066561630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &414331022093302858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015050424971378105}
+  - component: {fileID: 3505283073011425885}
+  m_Layer: 7
+  m_Name: ArrowFire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1015050424971378105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414331022093302858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.678, z: 0.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3994405103014554616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3505283073011425885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414331022093302858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a04ffca4190184ca51a8f8a7875322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 5630069093153952892, guid: eae1cbe5e31ad014dbd00c1bce2f6dcd, type: 3}
+  spawnPoint: {fileID: 1015050424971378105}
+  spawnInterval: 0.1
 --- !u!1 &485864959154712157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,7 +7498,7 @@ GameObject:
   - component: {fileID: 6979821382949180147}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7564,13 +7611,15 @@ MonoBehaviour:
   Stat:
     Health: 10
     MaxHealth: 100
-    Damaged: 10
+    Damage: 20
     Stamina: 100
     MaxStamina: 100
     RunConsumeStamina: 10
     RecoveryStamina: 5
     MoveSpeed: 7
     RunSpeed: 20
+    Jump: 3
+    JumpConsumeStamina: 20
     RotationSpeed: 200
     AttackCoolTime: 1
     AttackConsumeStamina: 20
@@ -7658,6 +7707,12 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 0
     Name: Damaged
+  - Type: 9
+    SynchronizeType: 0
+    Name: Death
+  - Type: 9
+    SynchronizeType: 0
+    Name: Live
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -8316,7 +8371,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.45777595, z: -0.4590206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1015050424971378105}
   m_Father: {fileID: 1559373316567018372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &9010912570035442173

@@ -68,7 +68,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.9407992
-        functionName: InActiveCollider
+        functionName: InactiveCollider
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
