@@ -45,6 +45,9 @@ MonoBehaviour:
   - Death
   - Live
   - AddLog
+  - MakeItem
+  - Create
+  - Delete
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FollowCamera
   - Minimap
+  - Environment
   layers:
   - Default
   - TransparentFX

@@ -7618,11 +7618,11 @@ MonoBehaviour:
     RecoveryStamina: 5
     MoveSpeed: 7
     RunSpeed: 20
-    Jump: 3
-    JumpConsumeStamina: 20
     RotationSpeed: 200
     AttackCoolTime: 1
     AttackConsumeStamina: 20
+    JumpPower: 3
+    JumpConsumStamina: 10
 --- !u!114 &7096765368521992600
 MonoBehaviour:
   m_ObjectHideFlags: 0
