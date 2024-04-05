@@ -7,6 +7,12 @@ TagManager:
   - FollowCamera
   - Minimap
   - Environment
+  - FxTemporaire
+  - Item
+  - Monster
+  - BearSpawnPoint
+  - Weapon
+  - PatrolPoint
   layers:
   - Default
   - TransparentFX
