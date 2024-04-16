@@ -39,11 +39,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Bear_tpose
-      takeName: Bear_tpose
+      name: Bear_Attack5 (1)
+      takeName: Bear_Attack5
       internalID: -2937485055117710192
-      firstFrame: 0
-      lastFrame: 2
+      firstFrame: 2
+      lastFrame: 86
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

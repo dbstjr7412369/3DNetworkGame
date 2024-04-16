@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5785695635921985937}
   - component: {fileID: -1734001537652085436}
   m_Layer: 7
-  m_Name: OHS03Polyart
+  m_Name: MaleWeapon
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
